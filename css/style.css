@@ -1,0 +1,150 @@
+/*===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*===== VARIABLES CSS ====*/
+:root {
+	--header-height: 3rem;
+	--nav-width: 324px;
+	
+ /*===== Font Weight ====*/
+ --font-medium: 500;
+	--font-semi-bold: 600;
+	--fond-bold: 700;
+	
+	/*===== Colors ====*/
+	--first-color: #CC4B2C;
+	--first-color-dark: #662616;
+	--first-color-darken: #290F09;
+	--text-color: 	#FFFFFF;
+	--first-color-light: #EAE7E6;
+	--first-color-lighten: #FFFAFA;
+	
+
+	/*===== Font and Typography====*/
+	--body-font: 'Poppins', sans-serif;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1rem;
+	--normal-font-size: .938rem;
+	--small-font-size: .913rem;
+	--h2-font-size: .75rem;
+
+	/*===== Margirns ====*/
+		--mb-1: .5rem;
+		--mb-2: 1rem;
+		--mb-3: 1.5rem;
+		--mb-4: 2rem;
+		--mb-5: 2.5rem;
+
+
+	/*===== z Index ====*/
+	--z-fixed: 100;
+
+}
+
+@media screen and (min-width: 768px)
+{
+	:root{		
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.12rem;
+	--normal-font-size: 1rem;
+	--small-font-size: .875rem;
+	--h2-font-size: .813rem;
+		
+	}	
+}
+
+/*==== BASE ==== */
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+
+	background-color: var(--first-color);
+	line-height: 1.6;
+}
+
+h1,h2,h3,p{
+	margin: 0;
+}
+
+h3{
+	font-weight: var(--font-semi-bold);
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display:  block;
+}
+
+/*==== CLASS CSS ==== */
+.section{
+	padding: 4rem 0 2rem;
+	
+}
+
+.section-title{
+	font-size: var(--h1-font-size);
+	color: var(--first-color-dark);
+	margin-bottom: var(--mb-3);
+	text-align: center;
+	font-weight: var(--font-bold);
+	margin-bottom: .25rem;
+}
+
+/* ==== LAYOUT ==== */
+.bd-grid{
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+
+.1-header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--first-color-lighten);
+	box-shadow: 0 2px 4px rgba();
+		
+}
+
+/* ==== NAV ==== */
+
+/* ==== Show Menu ==== */
+
+/* Active Menu */
+
+/* ==== HOME ==== */
+
+/*  Buttons  */
+
+
+
