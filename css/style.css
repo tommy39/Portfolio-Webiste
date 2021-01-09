@@ -15,7 +15,8 @@
 	--first-color: #CC4B2C;
 	--first-color-dark: #662616;
 	--first-color-darken: #290F09;
-	--text-color: 	#FFFFFF;
+	--bg-color:#FFFFFF;
+	--text-color: 	#000000	;
 	--first-color-light: #EAE7E6;
 	--first-color-lighten: #FFFAFA;
 	
@@ -70,7 +71,7 @@ body{
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-medium);
 
-	background-color: var(--first-color);
+	background-color: var(--bg-color);
 	line-height: 1.6;
 }
 
@@ -155,7 +156,7 @@ img{
 .nav__menu{
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -100%;
 	width: 90%;
 	height: 100vh;
 	padding: 3rem;
@@ -176,13 +177,38 @@ img{
 
 .nav__item{
 	margin-bottom: var(--mb-4);
+	
+}
+
+.nav__link{
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: var(--first-color-lighten);
+	font-weight: var(--font-bold);
+	transition: .3s;
+}
+
+.nav__link:hover{
+	color: var(--text-color);
+}
+
+.nav__toggle
+{
+	color: var(--first-color-dark);
+	font-size: 1.3rem;
+	cursor: pointer;
 }
 
 
-
 /* ==== Show Menu ==== */
+.show{
+	left: 0;
+}
 
 /* Active Menu */
+.active{
+	color: var(--text-color);
+}
 
 /* ==== HOME ==== */
 
