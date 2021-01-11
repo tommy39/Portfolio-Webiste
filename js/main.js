@@ -16,3 +16,4 @@ toggleMenu.addEventListener('click', ()=>{
 navChildProjectsBtn.addEventListener('click', ()=>{
     navChildProjectsMenu.toggle('toggle-my-projects-children');
 })
+
