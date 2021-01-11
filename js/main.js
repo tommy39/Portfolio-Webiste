@@ -1,50 +1,18 @@
-/* ==== MENU SHOW Y HIDDEN ==== */
+// TOGGLE MENU
 const navMenu = document.getElementById('nav-menu');
-	const  toggleMenu = document.getElementById('nav-toggle');
-	const  closeMenu = document.getElementById('nav-close');
+const  toggleMenu = document.getElementById('nav-toggle');
+const mainContent = document.getElementById('main');
+const wrapper = document.getElementById('wrapper-id');
+const navChildProjectsBtn = document.getElementById('nav-child-link-my-projects-button-id');
+const navChildProjectsMenu = document.getElementById('nav-my-projects-children-container-id');
 
-// SHOW
 toggleMenu.addEventListener('click', ()=>{
-	navMenu.classList.toggle('show')
+    navChildProjectsMenu.classList.toggle('toggle-sidebar')
+    mainContent.classList.toggle('toggle-body-size');
+    wrapper.classList.toggle('toggle-body-size');
 })
 
-
-// HIDDEN
-closeMenu.addEventListener('click', ()=>{
-	navMenu.classList.remove('show')
+// TOGGLE MY PROJECTS CHILDREN
+navChildProjectsBtn.addEventListener('click', ()=>{
+    navChildProjectsMenu.toggle('toggle-my-projects-children');
 })
-
-/* ==== REMOVE MENU ==== */
-const navLink = document.querySelectorAll('.nav__link');
-
-function linkAction(){
-	navMenu.classList.remove('show');
-}
-
-navLink.forEach(n=>n.addEventListener('click', linkAction))
-
-
-/* ==== SCROLL SECTIONS ACTIVE LINK ==== */ 
-const sections = document.querySelectorAll('section[id]');
-
-window.addEventListener('scroll', scrollActive);
-
-function scrollActive()
-{
-	const scrollY= window.pageYOffset;
-	
-	sections.forEach(current => {
-		const sectionHeight= current.offsetHeight;
-		const sectionTop = current.offsetTop - 50;
-		const sectionId = current.getAttribute('id');
-		
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
-			{
-				document.querySelector('.nav__menu a [href*='+ sectionId +']').classList.add('active');
-			}
-		else
-			{
-				document.querySelector('.nav__menu a [href*='+ sectionId +']').classList.remove('active');
-			}
-	})
-}
