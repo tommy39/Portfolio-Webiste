@@ -320,19 +320,6 @@ video{
 	transition: .5s;
 }
 
-.skills-content:hover{
-	background-color: var(--primary-color);
-}
-
-.skills-content:hover .skills-icon{
-	background-color: var(--primary-color-lightend);
-	color: var(--primary-color);
-}
-
-.skills-icon:hover{
-	background-color: var(--text-body-color);
-}
-
 /*===== END SKILS SECTION ====*/
 
 /*===== EXPERIENCE SECTION ====*/
@@ -546,7 +533,7 @@ video{
 }
 
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 680px)
 {
     .skills-list-container{
         row-gap: 2rem;
