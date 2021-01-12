@@ -14,10 +14,10 @@
 	<!-- === SIDEBAR NAVIGATION MENU === -->
     <div class="sidebar" id="nav-menu">
         <ul>
-            <li class="nav-link"><a href="#home"><i class="nav-link-txt">Home</i></a></li>
-            <li class="nav-link"><a href="#about"><i class="nav-link-txt">About Me</i></a></li>
-            <li class="nav-link"><a href="#skills"><i class="nav-link-txt">Skills</i></a></li>
-            <li class="nav-link"><a href="#experience"><i class="nav-link-txt">Experience</i></a></li>
+            <a href="#home"></a><li class="nav-link"><i class="nav-link-txt">Home</i></li></a>
+			<a href="#about"> <li class="nav-link"><i class="nav-link-txt">About Me</i></li></a>
+            <a href="#skills"><li class="nav-link"><i class="nav-link-txt">Skills</i></li></a>
+			<a href="#experience">  <li class="nav-link"><i class="nav-link-txt">Experience</i></li></a>
 			
 			<div class="nav-link-my-projects-button" id=nav-child-link-my-projects-button-id><li class="nav-link"><i class="nav-link-txt">My Projects</i></li></div>
 			
@@ -193,9 +193,39 @@
 					<a href="https://github.com/tommy39/Game-Level-Toolkit" target="_blank" rel="noopener noreferrer"><div class="project-github-link">
 					<span class="project-github-link-txt"><i class = 'bx bxl-github'></i> View On Github</span>
 				</div></a>	
-					<li class="section-text">Description: The Game Level Toolkit is a tool that aims to streamline the process of 
-							working with multiple scenes at a single time in a project within unity both in the editor and
-							in-game. </li> 
+					<li class="section-text">The Game Level Toolkit is a tool that aims to streamline the process of working with multiple scenes at a single time in a project within unity both in the editor and in-game. 
+						<br></br>
+						Game Levels are scriptable objects within unity that contain a set of scenes which are assigned to it. Game Levels can also contain dependencies to other game levels which means the level requires other levels to be loaded for it to 
+						work, the game will automatically handle the loading of these levels and their dependencies.
+						In the Editor the user can load a game level with or without its dependencies. </li> 
+
+						<li class="section-text project-key-features">
+							<span class="project-key-features project-key-features-heading">Multi-Scene Editing:</span> Load Multiple Game Levels at any one time. When loading a level you can opt to load other levels that the target level is dependant on (or choose not). Choose to keep any open scenes opened while loading another level, or choose to load the level on its own. 
+						</li>
+						<li class="section-text project-key-features">
+<span class="project-key-features project-key-features-heading">Multi-Scene Creation:</span> You can create a Game Level which contains as many scenes as the user desires. The user
+		can also add new scenes to the level in the future. They can remove certain scenes from a level
+		or delete the level as a whole. The user can also duplicate a scene from a level to another level 
+		they can also duplicate a level to create a new level. The user can intergrate their own scenes
+		created through the traditional unity means into create game levels too, or they can choose to decouple
+		scenes from a game level to act as an independent unity scene.
+	</li>
+	<li class="section-text project-key-features">
+		<span class="project-key-features project-key-features-heading">Dependencies:</span> Game Levels can be assigned dependencies which are a list of other game levels that the target level
+	requires to be able to run correctly. The user can choose to load a scene with these dependencies in the editor
+	or they can exclude them, but when running a level in game the client will automatically handle adding all 
+	level dependencies.
+</li>
+	<li class="section-text project-key-features">
+		<span class="project-key-features project-key-features-heading">Categories:</span> Game Levels can be assigned a category to act as a filter for the user. This is helpful for large 
+	teams which may be working with a large number of levels and instead of having to look through an 
+	extensive list they can reduce the size of the list by using a category filter. 
+
+						</li>
+
+							<div class="project-video">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/d2CKQlZtT-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>	
 				</div>
 			</div>
 		</section>

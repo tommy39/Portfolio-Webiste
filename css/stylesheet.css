@@ -61,6 +61,10 @@ body{
    background-color: var(--background-color);
 }
 
+video{
+    width: 100%;
+}
+
 /*===== WRAPPER CONTENT ====*/
 .wrapper{
     display: flex;
@@ -164,9 +168,11 @@ body{
 
   .nav-link-txt{
       font-size: var(--nav-link-font-size);
-      font-weight: 100;
+      font-weight: 0;
       font-style: normal;
       margin-left: 2px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
   }
 
   .child-nav-link{
@@ -431,6 +437,28 @@ body{
     color: white;
 }
 
+.project-video{
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0px;
+}
+
+.project-video iframe{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.project-key-features-heading{
+    font-weight: var(--font-bold);
+}
+
+
 /*===== CONTACT SECTION ====*/
 .contact-text{
     margin-top: 0px;
@@ -507,3 +535,26 @@ body{
   .toggle-my-projects-children{
       display: none;
   }
+  
+  /* ====== Mobile Support ======*/
+  @media screen and (max-width: 1200px)
+{
+    .skills-list-container{
+        row-gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .skills-list-container{
+        row-gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+}
+
+
+  /* ====== END OF MOBILE SUPPORT ===== */
