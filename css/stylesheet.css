@@ -7,6 +7,10 @@
     --primary-color: #CC4B2C;
     --primary-color-darkend: #aa4228;
     --primary-color-lightend: #e65632;
+    --sidebar-hover-color: #2d5697;
+
+    --primary-color-orange: #CC4B2C;
+
     --subtitle-title-color: #000000;
 	--text-body-color: 	#000000	;
     --text-sidebar-color: white	;
@@ -126,7 +130,7 @@ video{
   }
   
   .wrapper .sidebar ul li:hover{
-    background-color: #594f8d;
+    background-color: var(--sidebar-hover-color);
   }
       
   .wrapper .sidebar ul li:hover a{
@@ -183,6 +187,7 @@ video{
     font-size: var(--child-nav-link-font-size);    
     padding-right: 0;
     margin-right: 0;
+    color: white;
 }
 
 .child-link-contents{    
@@ -296,10 +301,11 @@ video{
 }
 
 .skills-content{
-	padding: 1.5rem .5rem;
+	padding: 1.6rem .5rem;
 	border: 2px solid var(--primary-color);
 	border-radius: .5rem;
-	text-align: center;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .skills-icon{
@@ -318,6 +324,12 @@ video{
 
 .skills-content, .skills-icon, .skills-description, .skills-title{
 	transition: .5s;
+}
+
+.skill-icon-new{
+width: 50px;
+    height: 50px;    
+    text-align: center;
 }
 
 /*===== END SKILS SECTION ====*/
@@ -445,6 +457,9 @@ video{
     font-weight: var(--font-bold);
 }
 
+.project-key-features-head-name{
+    text-align: center;    
+}
 
 /*===== CONTACT SECTION ====*/
 .contact-text{

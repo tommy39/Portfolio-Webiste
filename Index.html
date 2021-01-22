@@ -14,22 +14,32 @@
 	<!-- === SIDEBAR NAVIGATION MENU === -->
     <div class="sidebar" id="nav-menu">
         <ul>
-            <a href="#home"></a><li class="nav-link"><i class="nav-link-txt">Home</i></li></a>
+            <a href="#home"><li class="nav-link"><i class="nav-link-txt">Home</i></li></a>
 			<a href="#about"> <li class="nav-link"><i class="nav-link-txt">About Me</i></li></a>
             <a href="#skills"><li class="nav-link"><i class="nav-link-txt">Skills</i></li></a>
 			<a href="#experience">  <li class="nav-link"><i class="nav-link-txt">Experience</i></li></a>
 			
-			<div class="nav-link-my-projects-button" id=nav-child-link-my-projects-button-id><li class="nav-link"><i class="nav-link-txt">My Projects</i></li></div>
+			<div class="nav-link-my-projects-button" id=nav-child-link-my-projects-button-id>
+				<a href="#projects"><li class="nav-link"><i class="nav-link-txt">My Projects</i></li></a></div>
 			
 			<div class="nav-child-links-projects-container" id="nav-my-projects-children-container-id">
-				<li class="child-nav-link">
+				<a href="#game-level-toolkit"><li class="child-nav-link">
 					<div class="child-link-contents">
-					<a href="#game-level-toolkit">
+					
 						<i class="child-nav-link-txt">
-						| Game Level Toolkit</i></a></div></li>
+						- Game Level Toolkit</i></div></li></a>			
+						<a href="#realm-of-hel"><li class="child-nav-link">
+							<div class="child-link-contents">
+							
+								<i class="child-nav-link-txt">
+								- Realm Of Hel</i></div></li></a>	
+								
+								<a href="#project-bounty"><li class="child-nav-link">
+									<div class="child-link-contents">
+										<i class="child-nav-link-txt">
+										- Project Bounty</i></div></li></a>	
 					</div>
-				
-			<li class="nav-link"><a href="#contact"><i class="nav-link-txt">Contact</i></a></li>
+					<a href="#contact"><li class="nav-link"><i class="nav-link-txt">Contact</i></li></a>
         </ul> 
         <div class="social_media">
           <a href="https://www.linkedin.com/in/thomas-mclaughlin-423a34131/"  target="_blank" rel="noopener noreferrer"><i class="social-handle bx bxl-linkedin-square bx-md"></i></a>
@@ -83,22 +93,26 @@
 				<h3 class="section-subtitle">Programming Skills</h3> 
 					<div class="skills-list-container bd-grid">
 						<div class="skills-content">
-							<i class="bx bx-code skills-icon"></i>
+							<img src="assets/img/csharp.png" class="skill-icon-new"/>
+							<img src="assets/img/unity.jpg" class="skill-icon-new"/>
+							<i class="skill-csharp2"></i>
 							<h4 class="skills-name">C# & Unity Engine</h4>
 							<p class="skills-description">Extensive Knowledge of C# Scripting and within the Unity Framework aswell as Extensive Knowledge about Unity-Engine</p>
 						</div>
 						<div class="skills-content">	
-							<i class="bx bx-code skills-icon"></i>
+							<img src="assets/img/cplusplusicon.png" class="skill-icon-new"/>
+							<img src="assets/img/unreal.png" class="skill-icon-new"/>
 							<h4 class="skills-name">C++ & Unreal Engine</h4>
 							<p class="skills-description">Knowledge of C++ language for applications and Unreal Engine</p>
 						</div>
 						<div class="skills-content">	
-							<i class="bx bx-code skills-icon"></i>
-								<h4 class="skills-name">HTML & CSS</h4>
+							<img src="assets/img/html5.png" class="skill-icon-new"/>
+							<img src="assets/img/css.jpg" class="skill-icon-new"/>
+							<h4 class="skills-name">HTML & CSS</h4>
 								<p class="skills-description">Knowledge Of HTML & CSS for Web Development & Design</p>
 							</div>
 							<div class="skills-content">	
-								<i class="bx bx-code skills-icon"></i>
+								<img src="assets/img/javascript.png" class="skill-icon-new"/>
 								<h4 class="skills-name">JavaScript</h4>
 								<p class="skills-description">Knowledge of JavaScript for Web Development</p>
 							</div>
@@ -106,22 +120,24 @@
 				<h3 class="section-subtitle">Other Game Dev Skills</h3> 
 					<div class="skills-list-container bd-grid">
 						<div class="skills-content">
-							<i class="bx bx-code skills-icon"></i>
-								<h4 class="skills-name">3D Art</h4>
+							<img src="assets/img/3dsmax.jpg" class="skill-icon-new"/>
+							<h4 class="skills-name">3D Art</h4>
 								<p class="skills-description">Experience with 3ds Max & Subtance Painter</p>
 						</div>
 						<div class="skills-content">		
-							<i class="bx bx-code skills-icon"></i>
+							<img src="assets/img/photoshop.png" class="skill-icon-new"/>
 							<h4 class="skills-name">2D Art</h4>
 							<p class="skills-description">Experience with Photoshop to create 2D Art</p>
 						</div>
 						<div class="skills-content">
-							<i class="bx bx-code skills-icon"></i>
+							<img src="assets/img/maya.jpg" class="skill-icon-new"/>
 							<h4 class="skills-name">Animation & Rigging</h4>
 							<p class="skills-description">Experience with Maya for rigging and animation</p>
 						</div>
 						<div class="skills-content">
-							<i class="bx bx-code skills-icon"></i>
+							<img src="assets/img/jira.png" class="skill-icon-new"/>
+							<img src="assets/img/trello.png" class="skill-icon-new"/>
+							<img src="assets/img/github.png" class="skill-icon-new"/>
 							<h4 class="skills-name">Project Management</h4>
 							<p class="skills-description">Experience with JIRA, Trello, Github, Perforce for different types of projects</p>
 						</div>
@@ -198,7 +214,7 @@
 						Game Levels are scriptable objects within unity that contain a set of scenes which are assigned to it. Game Levels can also contain dependencies to other game levels which means the level requires other levels to be loaded for it to 
 						work, the game will automatically handle the loading of these levels and their dependencies.
 						In the Editor the user can load a game level with or without its dependencies. </li> 
-
+<div class="project-key-features-head-name"><span class="=section-text">Key Features</span></div>
 						<li class="section-text project-key-features">
 							<span class="project-key-features project-key-features-heading">Multi-Scene Editing:</span> Load Multiple Game Levels at any one time. When loading a level you can opt to load other levels that the target level is dependant on (or choose not). Choose to keep any open scenes opened while loading another level, or choose to load the level on its own. 
 						</li>
@@ -227,6 +243,35 @@
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/d2CKQlZtT-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>	
 				</div>
+			</div>
+
+			<div class=project-contents>
+				<h2 class="project-title" id="realm-of-hel">Unity - Realm Of Hel</h2>
+				<a href="https://github.com/tommy39/Game-Level-Toolkit" target="_blank" rel="noopener noreferrer"></a><div class="project-github-link">
+			</div></a>	
+				<li class="section-text">Realm of Hel was a college project that involved the collaboration of myself and 2 others.	Realm Of Hel Third person A-RPG inspired by Dark Souls, built in unity. I was responsbile for the programming as well as parts of the design & art.
+</li>
+<div class="project-key-features-head-name"><span class="=section-text">Key Features</span></div>
+						<li class="section-text project-key-features">
+							<span class="project-key-features project-key-features-heading">Third-Person Melee Combat: </span> Realm of Hel uses a melee system similiar to dark souls where the player can combo attacks, block incomming attacks and parry attacks.</span>
+						</li>
+						<li class="section-text project-key-features">
+							<li class="section-text project-key-features">
+								<span class="project-key-features project-key-features-heading">Inventory System:</span> Realm Of Hel has an inventory slot styled system. The player can equip new items into their quickbar and use them access through the 1-6 hotkeys. They can also use their backpack to carry more items or swap stuff in and out with their hotbar. The player can use - consumables, weapons and shields. 
+							</li>
+							<li class="section-text project-key-features"></li>
+							</li>
+						<div class="project-video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/aOVW4Eyb6VU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>							</div>	
+			</div>
+			<div class=project-contents>
+				<h2 class="project-title" id="project-bounty">Unity - Project Bounty</h2>
+				<a href="https://github.com/tommy39/Game-Level-Toolkit" target="_blank" rel="noopener noreferrer"></a><div class="project-github-link">
+			</div></a>	
+				<li class="section-text">Project Bounty was a Top Down Shooter Prototype that I had worked on independently. It is inspired by top down shooters similiar to hotline miami and 12 is better than 6</li>
+
+						<div class="project-video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/aOVW4Eyb6VU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>							</div>	
 			</div>
 		</section>
 
