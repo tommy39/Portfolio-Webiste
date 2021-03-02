@@ -2,6 +2,8 @@
   --sidebarWidth: 225px;
   --bodyTopMargin: 50px;
   --toggleSidebarButtonTopMargin: -50px;
+  --experience-item-size: 800px;
+  --about-section-left-margin:150px;
 }
 
 body {
@@ -66,7 +68,7 @@ body {
   border: none;
   position: fixed;
   z-index: 1;
-  margin-top:var(--toggleSidebarButtonTopMargin)
+  margin-bottom: 40px;
 }
 
 .openbtn:hover {
@@ -95,21 +97,65 @@ body {
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
+  margin-left: 30px;
   padding-top: -100px;
   padding-bottom: -100px;
   padding: 20px 30px;
   text-transform: uppercase;
   color: white;
 }
+
+.first-section{
+  margin-top: -50px;
+}
 /******* END SECTIONS *****/
 
 /******* SECTIONS CONTENT *****/
 
+/*===== ABOUT SECTION ====*/
 .content-about{
-margin-left: 150px;
+margin-left: var(--about-section-left-margin);
 margin-right: 150px;
 }
 
+.about-profile-pic{
+  padding-top: 5rem;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: green;
+  margin: 10px;
+  border: 3px solid blue;
+  padding: 10px;
+}
+
+.about-profile-img{
+  width: 160px;
+  height: 160px;
+}
+
+.about-header{
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.about-header-text{
+  margin-bottom: -12.5px;
+  padding-left: 5px;
+}
+
+.about-header-social-links{
+  margin-top: 20px;
+  bottom: 0;
+}
+
+.about-social-link-icon{
+  width: 50px;
+  height: 60px;
+}
 
 /*===== PROJECTS SECTION ====*/
 .bd-grid {
@@ -126,7 +172,8 @@ margin-right: 150px;
 .projects-list-container {
   row-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
+  padding-left: 40px;
+
 }
 
 .projects-content {
@@ -161,7 +208,77 @@ margin-right: 150px;
   height: 50px;
   text-align: center;
 }
-/*===== END SKILS SECTION ====*/
+/*===== END PROJECT SECTION ====*/
+
+/*===== SKILLS SECTION ====*/
+.skill-list{
+  background-color: red;
+}
+
+.skill-items{
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 0rem;
+  width: calc(100% - 2rem);
+  grid-template-columns: repeat(10, 0fr);
+}
+
+/*===== END SKILLS SECTION ====*/
+
+/*===== EXPERIENCE SECTION ====*/
+.experience-section{
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--experience-item-size);
+  align-items: center;
+}
+.experience-header{
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.experience-item{
+  background-color: royalblue;
+}
+
+.experience-icon{
+  height: 75px;
+  width: 75px;
+}
+.experience-name{
+  padding-left: 20px;
+}
+
+.experience-job-title{
+  margin-left: auto; 
+margin-right: 20px;
+}
+
+.experience-line-break{
+  padding-top: 4px;
+background-color: red;
+}
+
+.experience-content-bulletpoints{
+  padding-left: 30px;
+}
+
+.experience-content-bulletpoints h4{
+  display: list-item;         
+    list-style-type: disc;       
+    list-style-position: inside; 
+}
+
+.experience-date{
+  background-color: rosybrown;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*===== END EXPERIENCE SECTION ====*/
+
+
 
 /******* END SECTIONS CONTENT*****/
 
