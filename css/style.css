@@ -21,6 +21,7 @@
   --projects-marging :140px;
   --primary-brown-color: #795548;
   --project-item-text-padding: 16px;
+  --project-image-width:455px
 }
 
 /******* MAIN *****/
@@ -184,10 +185,10 @@ body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--primary-green-teal);
   color: var(--primary-white-color);
   padding: 10px 15px;
-  border: none;
+  border-top: 1px solid rgb(0, 0, 0);
   position: fixed;
   z-index: 1;
   margin-bottom: 40px;
@@ -312,7 +313,7 @@ body {
 
 .projects-list-container {
   row-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-left: var(--projects-marging);
   padding-right: calc(var(--projects-marging) / 2);
 }
@@ -320,6 +321,7 @@ body {
 .projects-content {
   margin: 1.6rem .2rem;
   box-shadow: 1px 1px 2px 3px rgba(131, 131, 131, 0.356);
+  width: var(--project-image-width);
 }
 
 .projects-icon {
@@ -349,7 +351,7 @@ body {
 }
 
 .project-item-heading-image {
-  width: 455px;
+  width: var(--project-image-width);
   height: 250px;
 }
 
@@ -403,6 +405,7 @@ body {
   padding-bottom: 20px;
   padding-top: 8px;
   box-shadow: 1px 1px 2px 3px rgba(184, 184, 184, 0.65);
+  min-width: 375px;
 }
 
 .skill-breaker {
@@ -432,7 +435,7 @@ body {
   grid-template-columns: 100%;
   column-gap: 0rem;
   width: calc(100% - 2rem);
-  grid-template-columns: repeat(10, 0fr);
+  grid-template-columns: repeat(3, 0fr);
   margin-left: calc(var(--skills-content-margin) + 2px);
 }
 
@@ -495,6 +498,7 @@ body {
   transition: 0.3s;
   text-decoration: underline;
 }
+
 
 .experience-job-title {
   margin-left: auto;
@@ -647,5 +651,25 @@ body {
   }
   #main {
     margin-left: var(--sidebarWidth);
+  }
+
+  .projects-list-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-list {min-width: 540px;
+  }
+
+  .skill-items {
+    grid-template-columns: repeat(6, 0fr);
+  }
+
+  @media screen and (min-width: 1400px) {
+    .skill-list {min-width: 820px;
+    }
+  
+    .skill-items {
+      grid-template-columns: repeat(10, 0fr);
+    }
   }
 }
