@@ -12,6 +12,7 @@
   --sidebar-hover-projects-color: rgb(0, 202, 192);
   --sidebar-hover-skills-color: rgb(0, 140, 255);
   --sidebar-hover-experience-color: rgb(183, 0, 255);
+  --sidebar-hover-education-color: rgb(255, 166, 0);
   --sidebar-hover-resume-color: rgb(255, 0, 0);
   --sidebar-hover-contact-color: rgb(124, 124, 124);
   --primary-white-color: #fafafa;
@@ -176,6 +177,10 @@ body {
 
 .sidebar-hover-contact {
   background-color: var(--sidebar-hover-contact-color);
+}
+
+.sidebar-hover-education {
+  background-color: var(--sidebar-hover-education-color);
 }
 
 /******* END SIDE BAR *****/
