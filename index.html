@@ -1,429 +1,347 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<head> 
 
-<head>
-    <title>Thomas Mc Laughlin | Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> <!-- Used for icons -->
-    <!-- === BOX ICONS === -->
-    <link href="assets/boxicons/css/boxicons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<title>Thomas Mc Laughlin | Porfolio</title>
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 </head>
+<body class="preload">
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="#about" class="nav__link">
+                <i class="material-icons">person_outline</i>
+                About
+            </a>
+            <a class="nav__link" href="#experience">
+                <i class="material-icons">source</i>
+                Experience
+            </a>
+            <a class="nav__link" href="#skills">
+                <i class="material-icons">grade</i>
+                Skills
+            </a>
+            <a class="nav__link" href="#projects">
+                <i class="material-icons">task</i>
+                Projects
+            </a>
+            <a class="nav__link" href="#education">
+                <i class="material-icons">history</i>
+                Education
+            </a>
+            <a class="nav__link" href="assets/CV-ThomasMcLaughlin-SE.pdf" target="_blank" rel="noopener noreferrer">          
+                <i class="material-icons">description</i>
+                Resume
+            </a>
+            <a class="nav__link" href="#contact">
+                <i class="material-icons">perm_phone_msg</i>
+                Contact
+            </a>
+        </div>
 
-<div id="mySidebar" class="sidebar">
-    <div class="sidebar-heading">
-        <h1>Thomas Mc Laughlin</h1>
-        <h2>Games Programmer</h2>
-    </div>
-    <div class="sidebar-items">
-        <a href="#about">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-about"></div>
-                <img src="assets/img/AboutIcon.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">About</p>
-            </div>
-        </a>
-        <a href="#projects">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-projects"></div>
-                <img src="assets/img/ProjectsIcon.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">Projects</p>
-            </div>
-        </a>
-        <a href="#skills">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-skills"></div>
-                <img src="assets/img/skills.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">Skills</p>
-            </div>
-        </a>
-        <a href="#experience">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-experience"></div>
-                <img src="assets/img/ExperienceIcon.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">Experience</p>
-            </div>
-        </a>
-        <a href="https://docs.google.com/document/d/1XfPnRTJC-i-mmBLNBws4vpgMNwPOjyhODc5IgxCTJ9U/edit?usp=sharing"
-            target="_blank" rel="noopener noreferrer">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-resume"></div>
-                <img src="assets/img/ResumeIcon.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">Resume</p>
-            </div>
-        </a>
-        <a href="#contact">
-            <div class="sidebar-items-item">
-                <div class="sidebar-item-hover-effect sidebar-hover-contact"></div>
-                <img src="assets/img/ContactIcon.svg" class="sidebar-items-icon">
-                <p class="sidebar-item-text">Contact</p>
-            </div>
-        </a>
-    </div>
-    <div class="sidebar-social-handle">
-        <a href="https://www.linkedin.com/in/thomas-mclaughlin-423a34131/" target="_blank" rel="noopener noreferrer"
-            class="about-social-link sidebar-social-item"><img src="assets/boxicons/svg/logos/bxl-linkedin-square.svg"
-                class="about-social-link-icon"></a>
-        <a href="https://github.com/tommy39" target="_blank" rel="noopener noreferrer" class="about-social-link"><img
-                src="assets/boxicons/svg/logos/bxl-github.svg" class="about-social-link-icon"></a>
-    </div>
-</div>
-
-<div id="main">
-    <button class="openbtn" onclick="toggleNavBar()">☰</button>
-    <div class="main-content">
-        <section class="section first-section" id="about">
-            <h3 class="section-heading">ABOUT</h3>
+        <div class="nav__overlay">
+        </div>
+    </nav>
+<main>
+    <div class="main__content">
+ <div class="about__section">
+        <section class="section__headingBG first-section" id="about">
+            <h3 class="section__headingTxt">ABOUT</h3>
         </section>
-        <div class="content-about">
-            <div class="about-header">
-                <div class="about-profile-pic">
-                    <img src="assets/img/perfil.png" class="about-profile-img" />
+        <div class="content__about body__content">
+            <div class="about__header">
+                <div class="about__profilePicture">
+                    <img src="assets/img/perfil.png" class="about__profile__img" />
                 </div>
-                <div class="about-header-body-content">
-                    <h3 class="about-header-name about-header-text">Thomas Mc Laughlin</h3>
-                    <h4 class="about-header-job-title about-header-text">Programmer & Developer</h4>
-                    <h5 class="about-header-location about-header-text">Clare, Ireland - Open To Relocation</h5>
-                    <div class="about-header-social-links">
+                <div class="about__header__body__content">
+                    <h3 class="about__header__name about__header__text">Thomas Mc Laughlin</h3>
+                    <h4 class="about__header__job__title about__header__text">Software Engineer</h4>
+                    <h5 class="about__header__location about__header__text">Clare, Ireland - Open To Relocation</h5>
+                    <div class="about__header__social__links">
                         <a href="https://www.linkedin.com/in/thomas-mclaughlin-423a34131/" target="_blank"
-                            rel="noopener noreferrer" class="about-social-link"><img
+                            rel="noopener noreferrer" class="about__social__link"><img
                                 src="assets/boxicons/svg/logos/bxl-linkedin-square.svg"
-                                class="about-social-link-icon"></a>
+                                class="about__social__link__icon"></a>
 
                         <a href="https://github.com/tommy39" target="_blank" rel="noopener noreferrer"
-                            class="about-social-link"><img src="assets/boxicons/svg/logos/bxl-github.svg"
-                                class="about-social-link-icon"></a>
+                            class="about__social__link"><img src="assets/boxicons/svg/logos/bxl-github.svg"
+                                class="about__social__link__icon"></a>
                     </div>
                 </div>
             </div>
-            <p class="about-content-body">A Self Taught Programmer looking to transition from a 3D artist role into a programming position in the games industry. 
+            <p class="about__content__body">A Self Taught Software Engineer with a history in the games industry ranging from 3D Art
+                to Programming.
+
+                Now looking to exit games, searching for new interesting challenges and work with
+                companies that are making a meaningful impact on the world.
             </p>
-            <p class="about-content-body">Since I was first introduced to games I quickly grew a passion and interest
-                for how games are made and how I could work on them. Coming from the 3D sector in the games industry I
-                am wanting to change my role into a programming position to work on ambitious projects. I love building
-                things, solving challenging problems and working in a team oriented environment.
-            </p>
-            <p class="about-content-subtitle">My Background</p>
-            <p class="about-content-body">In my late teen years I was introduced to 3D and became fascinated with being
-                able to work on games and mods. I knew for a long time that I wanted to pursue a career in the games
-                industry, so I decided to go down the path of a 3D Artist. From working on mods to games from the period
-                of 2012-2020 including titles such as - <a
-                    href="https://store.steampowered.com/app/604540/Empire_of_Sin/" target="_blank"
-                    rel="noopener noreferrer" class="about-content-link">Empire Of Sin</a>, <a
-                    href="https://store.steampowered.com/app/736220/Post_Scriptum/" target="_blank"
-                    rel="noopener noreferrer" class="about-content-link">Post Scriptum</a> and <a
-                    href="https://store.steampowered.com/app/400750/Call_to_Arms__Gates_of_Hell_Ostfront/"
-                    target="_blank" rel="noopener noreferrer" class="about-content-link">Gates Of Hell</a>. After
-                attending
-                college and learning about programming and realizing how much more interesting and engaging I found it
-                in comparison to 3D Art, I decided it was time to change my career path. </p>
-        </div>
-        <section class="section" id="projects">
-            <h3 class="section-heading">MY PROJECTS</h3>
-        </section>
-        <section class="projects-section" id="projects">
-            <div class="projects-section-info-content">
-                <div class="projects-list-container bd-grid">
-                    <div class="projects-content">
-                        <img src="assets/img/project/fox-header.PNG" class="project-item-heading-image" />
-                        <div class="project-item-content-area">
-                            <h4 class="project-item-content-area-title">Multiplayer Top Down Shooter</h4>
-                            <p class="project-item-content-area-body-text">A Top Down Tactical Shooter inspired by
-                                Foxhole and Running With Rifles. Written with C# and Built In Unity with Photon PUN.</p>
-                            <div class="project-item-external-links">
-                                <a href="projects/project_fox.html" class="project-content-link"> <img
-                                        src="assets/img/external-link-icon.svg"
-                                        class="project-item-external-links-img"></a>
-                                <a href="https://github.com/tommy39/Project-Fox" target="_blank"
-                                    rel="noopener noreferrer" class="project-content-link"> <img
-                                        src="assets/img/project-content-github.svg"
-                                        class="project-item-external-links-img"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-content">
-                        <img src="assets/img/project/inventory-sys-header.png" class="project-item-heading-image" />
-                        <div class="project-item-content-area">
-                            <h4 class="project-item-content-area-title">Inventory System</h4>
-                            <p class="project-item-content-area-body-text">A slot based Inventory System to use for
-                                different prototypes that is easy to expand and re-use with little editor
-                                work, as well as being lightweight.</p>
-                            <div class="project-item-external-links">
-                                <a href="projects/inventory_system.html" class="project-content-link"> <img
-                                        src="assets/img/external-link-icon.svg"
-                                        class="project-item-external-links-img"></a>
-                                <a href="https://github.com/tommy39/Frontier-Inventory-System" target="_blank"
-                                    rel="noopener noreferrer" class="project-content-link"> <img
-                                        src="assets/img/project-content-github.svg"
-                                        class="project-item-external-links-img"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-content">
-                        <img src="assets/img/project/gameleveltoolkit-header.PNG" class="project-item-heading-image" />
-                        <div class="project-item-content-area">
-                            <h4 class="project-item-content-area-title">Game Level Toolkit For Unity</h4>
-                            <p class="project-item-content-area-body-text">A Tool that aims to streamline the process of
-                                working with multiple scenes at a single time in a project within unity both in the
-                                editor and in-game.</p>
-                            <div class="project-item-external-links">
-                                <a href="projects/game_level_toolkit_unity.html" class="project-content-link"> <img
-                                        src="assets/img/external-link-icon.svg"
-                                        class="project-item-external-links-img"></a>
-                                <a href="https://github.com/tommy39/Game-Level-Toolkit" target="_blank"
-                                    rel="noopener noreferrer" class="project-content-link">
-                                    <img src="assets/img/project-content-github.svg"
-                                        class="project-item-external-links-img"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-content">
-                        <img src="assets/img/project/bounty-header.png" class="project-item-heading-image" />
-                        <div class="project-item-content-area">
-                            <h4 class="project-item-content-area-title">Hotline: Miami Like 3D Prototype</h4>
-                            <p class="project-item-content-area-body-text">A Fast Paced Top Down Shooter inspired by
-                                Hotline: Miami.</p>
-                            <div class="project-item-external-links">
-                                <a href="projects/project_bounty.html" class="project-content-link"> <img
-                                        src="assets/img/external-link-icon.svg"
-                                        class="project-item-external-links-img"></a>
-                                <a href="https://github.com/tommy39/Project-Bounty" target="_blank"
-                                    rel="noopener noreferrer" class="project-content-link"> <img
-                                        src="assets/img/project-content-github.svg"
-                                        class="project-item-external-links-img"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-content">
-                        <img src="assets/img/project/roh_cover_img.jpg" class="project-item-heading-image" />
-                        <div class="project-item-content-area">
-                            <h4 class="project-item-content-area-title">Third Person A-RPG: Realm Of Hel</h4>
-                            <p class="project-item-content-area-body-text">Souls-Like Prototype built as part of final
-                                year college project.</p>
-                            <div class="project-item-external-links">
-                                <a href="projects/realm_of_hel.html" class="project-content-link"> <img
-                                        src="assets/img/external-link-icon.svg"
-                                        class="project-item-external-links-img"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-        </section>
-        <section class="section" id="skills">
-            <h3 class="section-heading">SKILLS</h3>
-        </section>
-        <section class="skills-section">
-            <div class="skill-list">
-                <h3 class="skill-list-header">Programming Languages and Tools</h3>
-                <div class="skill-breaker"></div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <img src="assets/img/csharp.svg" class="skill-item-icon" />
-                        <p class="skill-text">C#</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/cplusplusicon.svg" class="skill-item-icon" />
-                        <p class="skill-text">C++</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/unityIcon.svg" class="skill-item-icon" />
-                        <p class="skill-text">Unity</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/UnrealEngineIcon.svg" class="skill-item-icon" />
-                        <p class="skill-text">Unreal</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/html5icon.svg" class="skill-item-icon" />
-                        <p class="skill-text">HTML5</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/cssicon.svg" class="skill-item-icon" />
-                        <p class="skill-text">CSS3</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/javascripticon.svg" class="skill-item-icon" />
-                        <p class="skill-text">JavaScript</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/NET_Core_Logo.svg" class="skill-item-icon" />
-                        <p class="skill-text">.NET</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-list">
-                <h3 class="skill-list-header">Other Game Dev Skills and Tools</h3>
-                <div class="skill-breaker"></div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <img src="assets/img/jira-1.svg" class="skill-item-icon" />
-                        <p class="skill-text">JIRA</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/trello-log.svg" class="skill-item-icon" />
-                        <p class="skill-text">Trello</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/github-icon.svg" class="skill-item-icon" />
-                        <p class="skill-text">Github</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/photoshop-icon.svg" class="skill-item-icon" />
-                        <p class="skill-text">Photoshop</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/3dsmax-icons.svg" class="skill-item-icon" />
-                        <p class="skill-text">3D Art</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="assets/img/maya-2017.svg" class="skill-item-icon" />
-                        <p class="skill-text">Animation</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="experience">
-            <h3 class="section-heading">EXPERIENCE</h3>
-        </section>
-        <section class="experience-section">
-            <div class="experience-list">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <a href="https://romerogames.com/" target="_blank" rel="noopener noreferrer"> <img
-                                src="assets/img/romero-games.png" class="experience-icon circle-shadow" /></a>
-                        <a href="https://romerogames.com/" target="_blank" rel="noopener noreferrer">
-                            <h2 class="experience-name">
-                                Romero Games
-                            </h2>
-                        </a>
-                        <h3 class="experience-job-title">
-                            3D Artist
-                        </h3>
-                    </div>
-                    <div class="experience-line-break"></div>
-                    <div class="experience-content-heading">
-                        <h2 class="experience-bulletpoint-header">Responsibilities</h2>
-                        <div class="experience-content-bulletpoints">
-                            <h4>Create 3D Weapons & Environment Props</h4>
-                            <h4>Texturing Of Low Poly Assets</h4>
-                            <h4>Environment Set Dressing</h4>
-                            <h4>Lighting</h4>
-                            <h4>Level Design</h4>
-                        </div>
-                    </div>
-                    <div class="experience-date">
-                        <h5 class="experience-date-text">Aug 2018 - May 2020 | Galway, IE</h5>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <a href="http://postscriptumgame.com/" target="_blank" rel="noopener noreferrer"> <img
-                                src="assets/img/periscopegames.jpg" class="experience-icon circle-shadow" /></a>
-                        <a href="http://postscriptumgame.com/" target="_blank" rel="noopener noreferrer">
-                            <h2 class="experience-name">
-                                Periscope Games
-                            </h2>
-                        </a>
-                        <h3 class="experience-job-title">
-                            3D Artist
-                        </h3>
-                    </div>
-                    <div class="experience-line-break"></div>
-                    <div class="experience-content-heading">
-                        <h2 class="experience-bulletpoint-header">Responsibilities</h2>
-                        <div class="experience-content-bulletpoints">
-                            <h4>Create 3D Weapons, Vehicles & Props</h4>
-                            <h4>Texturing Of Low Poly Assets</h4>
-                        </div>
-                    </div>
-                    <div class="experience-date">
-                        <h5 class="experience-date-text">Jun 2016 - Aug 2017 | Remote</h5>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <a href="https://lit.ie/" target="_blank" rel="noopener noreferrer"> <img
-                                src="assets/img/lit-icon.png" class="experience-icon circle-shadow" /></a>
-                        <a href="https://lit.ie/" target="_blank" rel="noopener noreferrer">
-                            <h2 class="experience-name">
-                                Game Design & Art BSC Honours
-                            </h2>
-                        </a>
-                        <h3 class="experience-job-title">
-                            Student
-                        </h3>
-                    </div>
-                    <div class="experience-line-break"></div>
-                    <div class="experience-content-heading">
-                        <p class="experience-content-about-text">During my time at Limerick Institute of Technology, I
-                            learn't about many different areas in game development but was primarily focused around -
-                            Game Design, Programming & Art.</p>
-                        <h2 class="experience-bulletpoint-header">Key Learnings</h2>
-                        <div class="experience-content-bulletpoints">
-                            <h4>Programming with C# and working within Unity Engine</h4>
-                            <h4>Technical Scripting with Houdini</h4>
-                            <h4>Web Design and Development</h4>
-                            <h4>Game Design</h4>
-                        </div>
-                    </div>
-                    <div class="experience-date">
-                        <h5 class="experience-date-text">Sep 2015 - May 2019 | Tipperary, IE</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="contact">
-            <h3 class="section-heading">CONTACT</h3>
-        </section>
-        <section class="contact-section">
-            <div class="contact-section-list">
-                <a href="mailto:t.mclaughlin1337@gmail.com">
-                    <div class="contact-item">
-                        <img src="assets/img/emailicon.svg" class="contact-item-icon" />
-                        <h6 class="contact-item-text">t.mclaughlin1337@gmail.com</h6>
-                    </div>
-                </a>
-                <a href="https://github.com/tommy39" target="_blank" rel="noopener noreferrer">
-                    <div class="contact-item">
-                        <img src="assets/img/github-icon.svg" class="contact-item-icon" />
-                        <h6 class="contact-item-text">Github</h6>
-                    </div>
-                </a> <a href="https://www.linkedin.com/in/thomas-mclaughlin-423a34131/" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="contact-item">
-                        <img src="assets/img/linkedin.svg" class="contact-item-icon" />
-                        <h6 class="contact-item-text">LinkedIn</h6>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </div>
+ </div>
+ <div class="section__headingBG" id="experience">
+    <h3 class="section__headingTxt">EXPERIENCE</h3>
 </div>
+<div class="experience-section body__content">
+    <div class="experience-list ">
+        <div class="experience-item">
+            <div class="experience-header">
+                <a href="https://romerogames.com/" target="_blank" rel="noopener noreferrer"> <img
+                        src="assets/img/LavaSkull_WebLogo.png" class="experience-icon circle-shadow" /></a>
+                <a href="https://romerogames.com/" target="_blank" rel="noopener noreferrer">
+                    <h2 class="experience-name">
+                        Lavaskull Games
+                    </h2>
+                </a>
+                <h3 class="experience-job-title">
+                    3D Artist
+                </h3>
+            </div>
+            <div class="experience-line-break"></div>
+            <div class="experience-content-heading">
+                <div class="experience-content-bulletpoints">
+                    <h4>Was made temporarily Lead Engineer of the team within 3 months</h4>
+                    <h4>Daily tasks included using C#, AWS, MongoDB & Node.JS</h4>
+                    <h4>Implemented major project changes for project lead that previous engineers
+                        had avoided to implement such as - Engine Upgrade, New Networking API,
+                         Rendering Pipeline Upgrades & UI Overhauls for Performance Gains</h4>
+                </div>
+            </div>
+            <div class="experience-date">
+                <h5 class="experience-date-text">Apr 2021 - Current | UK - Remote</h5>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    <div class="section__headingBG" id="skills">
+        <h3 class="section__headingTxt">SKILLS</h3>
+    </div>
+    <div class="skills-section body__content">
+        <div class="skill-list">
+            <h3 class="skill-list-header">Languages & Software</h3>
+            <div class="skill-breaker"></div>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="assets/img/csharp.svg" class="skill-item-icon" />
+                    <p class="skill-text">C#</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/NET_Core_Logo.svg" class="skill-item-icon" />
+                    <p class="skill-text">.NET CORE</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/xamarin.svg" class="skill-item-icon" />
+                    <p class="skill-text">Xamarin</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/html5icon.svg" class="skill-item-icon" />
+                    <p class="skill-text">HTML5</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/cssicon.svg" class="skill-item-icon" />
+                    <p class="skill-text">CSS3</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/js.svg" class="skill-item-icon" />
+                    <p class="skill-text">JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/node-js.svg" class="skill-item-icon" />
+                    <p class="skill-text">Node.JS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/mongodb.svg" class="skill-item-icon" />
+                    <p class="skill-text">MongoDB</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/aws.svg" class="skill-item-icon" />
+                    <p class="skill-text">AWS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/img/unityIcon.svg" class="skill-item-icon" />
+                    <p class="skill-text">Unity</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>   <section class="section__headingBG" id="projects">
+    <h3 class="section__headingTxt">PROJECTS</h3>
+</section>
+<section class="projects-section" id="projects">
+    <div class="projects-section-info-content">
+        <div class="projects-list-container">
+            <div class="projects-content">
+                <img src="assets/img/portfolioWebsiteHeader.png" class="project-item-heading-image" />
+                <div class="project-item-content-area">
+                    <h4 class="project-item-content-area-title">Personal Portfolio</h4>
+                    <p class="project-item-content-area-body-text">This Website was created by me from scratch, using HTML5, CSS & JS</p>
+                    <div class="project-item-external-links">
+                        <a href="https://github.com/tommy39/Project-Fox" target="_blank"
+                            rel="noopener noreferrer" class="project-content-link"> <img
+                                src="assets/img/project-content-github.svg"
+                                class="project-item-external-links-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <img src="assets/img/project/fox-header.PNG" class="project-item-heading-image" />
+                <div class="project-item-content-area">
+                    <h4 class="project-item-content-area-title">Multiplayer Top Down Shooter</h4>
+                    <p class="project-item-content-area-body-text">A Top Down Tactical Shooter inspired by
+                        Foxhole and Running With Rifles. Written with C# and Built In Unity with Photon PUN.</p>
+                    <div class="project-item-external-links">
+                        <a href="projects/project_fox.html" class="project-content-link"> <img
+                                src="assets/img/external-link-icon.svg"
+                                class="project-item-external-links-img"></a>
+                        <a href="https://github.com/tommy39/Project-Fox" target="_blank"
+                            rel="noopener noreferrer" class="project-content-link"> <img
+                                src="assets/img/project-content-github.svg"
+                                class="project-item-external-links-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <img src="assets/img/project/inventory-sys-header.png" class="project-item-heading-image" />
+                <div class="project-item-content-area">
+                    <h4 class="project-item-content-area-title">Inventory System</h4>
+                    <p class="project-item-content-area-body-text">A slot based Inventory System to use for
+                        different prototypes that is easy to expand and re-use with little editor
+                        work, as well as being lightweight.</p>
+                    <div class="project-item-external-links">
+                        <a href="projects/inventory_system.html" class="project-content-link"> <img
+                                src="assets/img/external-link-icon.svg"
+                                class="project-item-external-links-img"></a>
+                        <a href="https://github.com/tommy39/Frontier-Inventory-System" target="_blank"
+                            rel="noopener noreferrer" class="project-content-link"> <img
+                                src="assets/img/project-content-github.svg"
+                                class="project-item-external-links-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <img src="assets/img/project/gameleveltoolkit-header.PNG" class="project-item-heading-image" />
+                <div class="project-item-content-area">
+                    <h4 class="project-item-content-area-title">Game Level Toolkit For Unity</h4>
+                    <p class="project-item-content-area-body-text">A Tool that aims to streamline the process of
+                        working with multiple scenes at a single time in a project within unity both in the
+                        editor and in-game.</p>
+                    <div class="project-item-external-links">
+                        <a href="projects/game_level_toolkit_unity.html" class="project-content-link"> <img
+                                src="assets/img/external-link-icon.svg"
+                                class="project-item-external-links-img"></a>
+                        <a href="https://github.com/tommy39/Game-Level-Toolkit" target="_blank"
+                            rel="noopener noreferrer" class="project-content-link">
+                            <img src="assets/img/project-content-github.svg"
+                                class="project-item-external-links-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <img src="assets/img/project/bounty-header.png" class="project-item-heading-image" />
+                <div class="project-item-content-area">
+                    <h4 class="project-item-content-area-title">Hotline: Miami Like 3D Prototype</h4>
+                    <p class="project-item-content-area-body-text">A Fast Paced Top Down Shooter inspired by
+                        Hotline: Miami.</p>
+                    <div class="project-item-external-links">
+                        <a href="projects/project_bounty.html" class="project-content-link"> <img
+                                src="assets/img/external-link-icon.svg"
+                                class="project-item-external-links-img"></a>
+                        <a href="https://github.com/tommy39/Project-Bounty" target="_blank"
+                            rel="noopener noreferrer" class="project-content-link"> <img
+                                src="assets/img/project-content-github.svg"
+                                class="project-item-external-links-img"></a>
+                    </div>
+                </div>
+            </div>           
+                  </div>
+    </div>
+</section>
+<section class="section__headingBG" id="education">
+    <h3 class="section__headingTxt">Education</h3>
+</section>
+<section class="experience-section body__content">
+    <div class="experience-list">
+        <div class="experience-item">
+            <div class="experience-header education__img">
+                <a href="https://lit.ie/" target="_blank" rel="noopener noreferrer"> <img
+                        src="assets/img/lit-icon.png" class="experience-icon circle-shadow" /></a>
+                <a href="https://lit.ie/" target="_blank" rel="noopener noreferrer">
+                    <h2 class="experience-name">
+                        Game Design & Art BSC Honours
+                    </h2>
+                </a>
+                <h3 class="experience-job-title">
+                    Student
+                </h3>
+            </div>
+            <div class="experience-line-break"></div>
+            <div class="experience-content-heading">
+                <h2 class="experience-bulletpoint-header">Key Learnings</h2>
+                <div class="experience-content-bulletpoints">
+                    <h4>C# & Unity Engine</h4>
+                    <h4>HTML & CSS</h4>
+                    <h4>JavaScript & ActionScript</h4>
+                </div>
+            </div>
+            <div class="experience-date">
+                <h5 class="experience-date-text">Sep 2015 - May 2019 | Tipperary, IE</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section__headingBG" id="contact">
+    <h3 class="section__headingTxt">CONTACT</h3>
+</section>
+<section class="contact-section body__content">
+    <div class="contact-section-list">
+        <a href="mailto:t.mclaughlin1337@gmail.com">
+            <div class="contact-item">
+                <img src="assets/img/emailicon.svg" class="contact-item-icon" />
+                <h6 class="contact-item-text">t.mclaughlin1337@gmail.com</h6>
+            </div>
+        </a>
+        <a href="https://github.com/tommy39" target="_blank" rel="noopener noreferrer">
+            <div class="contact-item">
+                <img src="assets/img/github-icon.svg" class="contact-item-icon" />
+                <h6 class="contact-item-text">Github</h6>
+            </div>
+        </a> <a href="https://www.linkedin.com/in/thomas-mclaughlin-423a34131/" target="_blank"
+            rel="noopener noreferrer">
+            <div class="contact-item">
+                <img src="assets/img/linkedin.svg" class="contact-item-icon" />
+                <h6 class="contact-item-text">LinkedIn</h6>
+            </div>
+        </a>
+    </div>
+</section>
+        </main>
 <script>
-    function toggleNavBar() {
-        if (document.getElementById("mySidebar").style.width < "10px") {
-            document.getElementById("mySidebar").style.width = getComputedStyle(document.documentElement).getPropertyValue('--sidebarWidth');
-            document.getElementById("main").style.marginLeft = getComputedStyle(document.documentElement).getPropertyValue('--sidebarWidth');
-        } else {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    }
+    window.addEventListener("load", () => {
+        document.body.classList.remove("preload");
+    })
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.querySelector(".nav");
+
+        document.querySelector("#btnNav").addEventListener("click", () => {
+            nav.classList.add("nav--open");
+        })
+    
+        document.querySelector(".nav__overlay").addEventListener("click", () => {
+            nav.classList.remove("nav--open");
+        })
+
+        //Remove When Clicked On A Link
+        document.querySelector(".nav__links").addEventListener("click", () => {
+            nav.classList.remove("nav--open");
+        })
+    })
 </script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
 </body>
-
-</html>
