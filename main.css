@@ -427,7 +427,6 @@ main{
   }
   
   .project-item-content-area {
-    padding-bottom: 8px;
     padding-top: 0px;
     background-color:var(--primary-white-color);
     bottom: 0;
@@ -445,12 +444,11 @@ main{
     font-weight: 300;
     padding-left: var(--project-item-text-padding);
     border-bottom: 1px solid var(--primary-brown-color);
-    padding-bottom: 4px;
-    margin-top: 4px;
+    margin-top: 16px;
   }
   
   .project-item-content-area-body-text {
-    margin-top: 3px;
+      margin-top: -16px;
     padding-left: var(--project-item-text-padding);
     padding-right: var(--project-item-text-padding);
     font-weight: 200;
