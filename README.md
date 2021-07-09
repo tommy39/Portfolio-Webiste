@@ -3,4 +3,4 @@ Source code for my personal portfolio website that shows off my personal project
 
 See a Live Demonstration - http://indenialgames.com/
 
-Website was built using HTML 5, CSS and Javascript 
+Website was built using HTML 5, CSS and JS 
